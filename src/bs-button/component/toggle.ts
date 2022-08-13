@@ -7,7 +7,7 @@ const CLASS_NAME_ACTIVE = 'active'
 	selector: 'bs-btn-toggle',
 	extend: 'button',
 })
-export class BsToggleButton implements OnInit, OnDestroy {
+export class BsToggleButtonComponent implements OnInit, OnDestroy {
 
 	@View()
 	_element: HTMLButtonElement;
