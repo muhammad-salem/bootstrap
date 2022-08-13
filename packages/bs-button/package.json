@@ -1,0 +1,46 @@
+{
+	"name": "@ibyar/bs-button",
+	"version": "0.1.0",
+	"description": "Aurora Bootstrap Buttons, A Custom Element for Bootstrap powered by @Ibyar/Aurora",
+	"license": "MIT",
+	"homepage": "https://github.com/ibyar/bootstrap/tree/dev/packages/bs-button",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ibyar/bootstrap.git",
+		"directory": "packages/bootstrap"
+	},
+	"main": "./index.js",
+	"module": "./index.js",
+	"types": "./index.d.ts",
+	"type": "module",
+	"exports": {
+		".": "./index.js"
+	},
+	"files": [
+		"*"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"dependencies": {
+		"@ibyar/aurora": "^0.6.1",
+		"@ibyar/pipes": "^0.6.1",
+		"@ibyar/directives": "^0.6.1",
+		"@ibyar/core": "^0.6.1",
+		"@ibyar/expressions": "^0.6.1",
+		"@ibyar/elements": "^0.6.1",
+		"@ibyar/platform": "^0.6.1"
+	},
+	"devDependencies": {
+		"typescript": "^4.7.4"
+	},
+	"scripts": {
+		"build": "tsc --build --verbose"
+	},
+	"keywords": [
+		"aurora",
+		"ibyar",
+		"platform",
+		"front-end"
+	]
+}

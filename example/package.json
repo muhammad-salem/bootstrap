@@ -1,0 +1,32 @@
+{
+	"name": "@ibyar/example",
+	"version": "0.1.0",
+	"description": "Test App used as example to test Aurora bootstrap while development",
+	"license": "MIT",
+	"homepage": "https://github.com/ibyar/bootstrap",
+	"main": "./dist/index.js",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"private": true,
+	"publishConfig": {
+		"access": "restricted"
+	},
+	"dependencies": {
+		"@ibyar/aurora": "^0.6.1",
+		"@ibyar/bs-button": "^0.1.0",
+		"bootstrap": "^5.2.0",
+		"rxjs": "^7.5.6",
+		"tslib": "^2.4.0"
+	},
+	"devDependencies": {
+		"typescript": "^4.7.4"
+	},
+	"scripts": {
+		"build": "npx tsc --build --verbose",
+		"esmpack:watch": "npx esmpack -w"
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"references": [
+		{ "path": "src/bs-button" }
+	],
+	"compilerOptions": {
+		"composite": true
+	},
+	"files": []
+}

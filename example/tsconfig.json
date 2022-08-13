@@ -1,0 +1,23 @@
+{
+	"references": [
+		{
+			"path": "../tsconfig.json"
+		}
+	],
+	"extends": "@ibyar/aurora/tsconfig.compilerOption.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"outDir": "dist",
+		"rootDir": "src",
+		"composite": true,
+		"tsBuildInfoFile": "./tsBuild.info"
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.tsx"
+	],
+	"files": [
+		"src/index.ts"
+	],
+	"compileOnSave": true
+}
