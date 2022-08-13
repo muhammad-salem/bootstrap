@@ -8,7 +8,10 @@ export abstract class BsButtonComponent implements OnInit {
 	abstract size: BsBtnSize;
 	abstract getBsClass(): string;
 	onInit(): void {
-		this._element.classList.add('btn', this.getBsClass(), this.size ?? '');
+		this._element.classList.add('btn', this.getBsClass());
+		if (this.size) {
+			this._element.classList.add(this.size);
+		}
 	}
 }
 
