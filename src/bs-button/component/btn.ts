@@ -1,9 +1,11 @@
 import { Component, OnInit, Input, View } from '@ibyar/aurora';
 
 
+export type BsBtnSize = 'btn-sm' | 'btn-lg' | undefined;
+
 export abstract class BsButtonComponent implements OnInit {
 	abstract _element: HTMLButtonElement;
-	abstract size?: string;
+	abstract size: BsBtnSize;
 	abstract getBsClass(): string;
 	onInit(): void {
 		this._element.classList.add('btn', this.getBsClass(), this.size ?? '');
@@ -20,7 +22,7 @@ export class BsPrimaryButtonComponent extends BsButtonComponent {
 	_element: HTMLButtonElement;
 
 	@Input()
-	size?: string;
+	size: BsBtnSize;
 
 	getBsClass() {
 		return 'btn-primary';
@@ -37,7 +39,7 @@ export class BsSecondaryButtonComponent extends BsButtonComponent {
 	_element: HTMLButtonElement;
 
 	@Input()
-	size?: string;
+	size: BsBtnSize;
 
 	getBsClass() {
 		return 'btn-secondary';
@@ -55,7 +57,7 @@ export class BsSuccessButtonComponent extends BsButtonComponent {
 	_element: HTMLButtonElement;
 
 	@Input()
-	size?: string;
+	size: BsBtnSize;
 
 	getBsClass() {
 		return 'btn-success';
@@ -73,7 +75,7 @@ export class BsDangerButtonComponent extends BsButtonComponent {
 	_element: HTMLButtonElement;
 
 	@Input()
-	size?: string;
+	size: BsBtnSize;
 
 	getBsClass() {
 		return 'btn-danger';
@@ -91,7 +93,7 @@ export class BsWarningButtonComponent extends BsButtonComponent {
 	_element: HTMLButtonElement;
 
 	@Input()
-	size?: string;
+	size: BsBtnSize;
 
 	getBsClass() {
 		return 'btn-warning';
@@ -109,7 +111,7 @@ export class BsInfoButtonComponent extends BsButtonComponent {
 	_element: HTMLButtonElement;
 
 	@Input()
-	size?: string;
+	size: BsBtnSize;
 
 	getBsClass() {
 		return 'btn-info';
@@ -127,7 +129,7 @@ export class BsLightButtonComponent extends BsButtonComponent {
 	_element: HTMLButtonElement;
 
 	@Input()
-	size?: string;
+	size: BsBtnSize;
 
 	getBsClass() {
 		return 'btn-light';
@@ -145,7 +147,7 @@ export class BsDarkButtonComponent extends BsButtonComponent {
 	_element: HTMLButtonElement;
 
 	@Input()
-	size?: string;
+	size: BsBtnSize;
 
 	getBsClass() {
 		return 'btn-dark';
@@ -163,7 +165,7 @@ export class BsLinkButtonComponent extends BsButtonComponent {
 	_element: HTMLButtonElement;
 
 	@Input()
-	size?: string;
+	size: BsBtnSize;
 
 	getBsClass() {
 		return 'btn-link';
@@ -181,7 +183,7 @@ export class BsPrimaryOutlineButtonComponent extends BsButtonComponent {
 	_element: HTMLButtonElement;
 
 	@Input()
-	size?: string;
+	size: BsBtnSize;
 
 	getBsClass() {
 		return 'btn-outline-primary';
@@ -199,7 +201,7 @@ export class BsSecondaryOutlineButtonComponent extends BsButtonComponent {
 	_element: HTMLButtonElement;
 
 	@Input()
-	size?: string;
+	size: BsBtnSize;
 
 	getBsClass() {
 		return 'btn-outline-secondary';
@@ -217,7 +219,7 @@ export class BsSuccessOutlineButtonComponent extends BsButtonComponent {
 	_element: HTMLButtonElement;
 
 	@Input()
-	size?: string;
+	size: BsBtnSize;
 
 	getBsClass() {
 		return 'btn-outline-success';
@@ -235,7 +237,7 @@ export class BsDangerOutlineButtonComponent extends BsButtonComponent {
 	_element: HTMLButtonElement;
 
 	@Input()
-	size?: string;
+	size: BsBtnSize;
 
 	getBsClass() {
 		return 'btn-outline-danger';
@@ -253,7 +255,7 @@ export class BsWarningOutlineButtonComponent extends BsButtonComponent {
 	_element: HTMLButtonElement;
 
 	@Input()
-	size?: string;
+	size: BsBtnSize;
 
 	getBsClass() {
 		return 'btn-outline-warning';
@@ -271,7 +273,7 @@ export class BsInfoOutlineButtonComponent extends BsButtonComponent {
 	_element: HTMLButtonElement;
 
 	@Input()
-	size?: string;
+	size: BsBtnSize;
 
 	getBsClass() {
 		return 'btn-outline-info';
@@ -289,7 +291,7 @@ export class BsLightOutlineButtonComponent extends BsButtonComponent {
 	_element: HTMLButtonElement;
 
 	@Input()
-	size?: string;
+	size: BsBtnSize;
 
 	getBsClass() {
 		return 'btn-outline-light';
@@ -307,7 +309,7 @@ export class BsDarkOutlineButtonComponent extends BsButtonComponent {
 	_element: HTMLButtonElement;
 
 	@Input()
-	size?: string;
+	size: BsBtnSize;
 
 	getBsClass() {
 		return 'btn-outline-dark';
@@ -325,7 +327,7 @@ export class BsLinkOutlineButtonComponent extends BsButtonComponent {
 	_element: HTMLButtonElement;
 
 	@Input()
-	size?: string;
+	size: BsBtnSize;
 
 	getBsClass() {
 		return 'btn-outline-link';
